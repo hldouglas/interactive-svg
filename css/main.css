@@ -1,19 +1,15 @@
-.bear {
-  width: auto;
+@keyframes eyes {
+  0% { transform: translateX(0px); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(0px); }
+  75% { transform: translateX(10px); }
+  100% { transform: translateX(0px); }
 }
 
-#left-ear {
-  transform-origin: center center;
+#left-eye {
+  animation: eyes 3s infinite;
 }
 
-.bear:hover #left-ear {
-  transform: translateY(-5px);
-}
-
-#right-ear {
-  transform-origin: center center;
-}
-
-.bear:hover #right-ear {
-  transform: translateY(-5px);
+#right-eye {
+  animation: eyes 3s infinite;
 }
