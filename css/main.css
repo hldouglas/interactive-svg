@@ -1,7 +1,7 @@
 @keyframes eyes {
 
   0% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
   25% {
@@ -9,7 +9,7 @@
   }
 
   50% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
   75% {
@@ -17,7 +17,7 @@
   }
 
   100% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
 }
@@ -28,4 +28,20 @@
 
 #right-eye {
   animation: eyes 3s infinite;
+}
+
+#left-ear {
+  transition: all .5s linear;
+}
+
+#bear:hover #left-ear {
+  transform: translateY(-10px);
+}
+
+#right-ear {
+  transition: all .5s linear;
+}
+
+#bear:hover #right-ear {
+  transform: translateY(-10px);
 }
